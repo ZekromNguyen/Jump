@@ -1,0 +1,706 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.33f1 (433b0a79340b) revision 4406026'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 16197 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.33f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/nhatn/Desktop/ky 7/PRU212/Jump
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61450
+-job-worker-count
+5
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: C:/Users/nhatn/Desktop/ky 7/PRU212/Jump
+C:/Users/nhatn/Desktop/ky 7/PRU212/Jump
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [18724]  Target information:
+
+Player connection [18724]  * "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 3122953943 [EditorId] 3122953943 [Version] 1048832 [Id] WindowsEditor(7,PC-NAM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [18724] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [18724] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 2.31 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.33f1 (433b0a79340b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/nhatn/Desktop/ky 7/PRU212/Jump/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 (ID=0x2584)
+    Vendor:   NVIDIA
+    VRAM:     6002 MB
+    Driver:   32.0.15.6094
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002928 seconds.
+- Loaded All Assemblies, in  0.724 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.362 seconds
+Domain Reload Profiling: 1086ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (462ms)
+		LoadAssemblies (152ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (458ms)
+			TypeCache.Refresh (457ms)
+				TypeCache.ScanAssembly (444ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (363ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (314ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (165ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.068 seconds
+Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.872 seconds
+Domain Reload Profiling: 1933ms
+	BeginReloadAssembly (179ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (790ms)
+		LoadAssemblies (472ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (420ms)
+			TypeCache.Refresh (290ms)
+				TypeCache.ScanAssembly (267ms)
+			BuildScriptInfoCaches (110ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (873ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (722ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (124ms)
+			ProcessInitializeOnLoadAttributes (468ms)
+			ProcessInitializeOnLoadMethodAttributes (117ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 207 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6564 unused Assets / (4.8 MB). Loaded Objects now: 7263.
+Memory consumption went from 173.6 MB to 168.8 MB.
+Total: 10.454100 ms (FindLiveObjects: 0.618100 ms CreateObjectMapping: 0.531700 ms MarkObjects: 5.158100 ms  DeleteObjects: 4.144400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 188490.940402 seconds.
+  path: Assets/Scenes/1.unity
+  artifactKey: Guid(7a1c17a06bcf7d445923fd72b977ba7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/1.unity using Guid(7a1c17a06bcf7d445923fd72b977ba7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '155a71cb4d03810cab3dd85b989a8095') in 0.0060082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ff63da8f465683a2249eaeb566b4fe9') in 0.000529 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.675009 seconds.
+  path: Assets/Scenes/2.unity
+  artifactKey: Guid(9503e6aac545e2a429c0ac0adffaa2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/2.unity using Guid(9503e6aac545e2a429c0ac0adffaa2b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc967a1f6e96508d31d85ff41eedd364') in 0.000653 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.519295 seconds.
+  path: Assets/DefaultVolumeProfile.asset
+  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e3ee85287093c2e01e2184a29fd3edf') in 0.0214258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '89f842c1eac4b7d69ab715668f5b63d5') in 0.0012209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.844758 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(cbedb85dbc5bc47b8b4b66d425a377c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(cbedb85dbc5bc47b8b4b66d425a377c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2375506af6999fc89ffa4e4b42d7e4cc') in 0.0006094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.513254 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c391582d739b6e62a5220f35cbb167ac') in 0.0005838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.742584 seconds.
+  path: Assets/Movement.cs
+  artifactKey: Guid(17d78dc36ad2dcd47a9e10d18012ae42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Movement.cs using Guid(17d78dc36ad2dcd47a9e10d18012ae42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '755945efcde3ba21fe8905d5eff2af1a') in 0.0005698 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.916913 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player/hurt/player-hurt-1.png
+  artifactKey: Guid(c123c318507c6405a869f2f89068cf06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/player/hurt/player-hurt-1.png using Guid(c123c318507c6405a869f2f89068cf06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4795f3eec83a4109d25ee6bb2f7d259') in 0.1436633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player/idle/player-idle-1.png
+  artifactKey: Guid(72de0c64f2c6a498096698322c976a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/player/idle/player-idle-1.png using Guid(72de0c64f2c6a498096698322c976a67) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a528ab6f136d398d2e99fb337631f506') in 0.0321349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player/idle/player-idle-3.png
+  artifactKey: Guid(077f0469c420a4365bc67943783293df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/player/idle/player-idle-3.png using Guid(077f0469c420a4365bc67943783293df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f847dd771f50ad63bfcc9247271b4b9') in 0.0134309 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player/idle/player-idle-2.png
+  artifactKey: Guid(c8a742c1f2ebb43b9afe34a47304c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/player/idle/player-idle-2.png using Guid(c8a742c1f2ebb43b9afe34a47304c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '65fb50ec26a9a7af4aa8db8d8d856f8d') in 0.0070946 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player/run/player-run-2.png
+  artifactKey: Guid(d094cf6ac3d8a4d0bbbef5d6d6ad3eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/player/run/player-run-2.png using Guid(d094cf6ac3d8a4d0bbbef5d6d6ad3eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '91290934a17bcd13d3e33d1665c3d96f') in 0.0143725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.198790 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player/run/player-run-3.png
+  artifactKey: Guid(3f59d4fdf4fe04ab79f11dadde82fe8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/player/run/player-run-3.png using Guid(3f59d4fdf4fe04ab79f11dadde82fe8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a1ca9b31239ce5258701e5a7158f8e3') in 0.0154389 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player/run/player-run-6.png
+  artifactKey: Guid(af314424f59d946469a97f398e8de53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/player/run/player-run-6.png using Guid(af314424f59d946469a97f398e8de53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18d297d1fe14df74e75b1fa0e5299fcc') in 0.0128428 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SunnyLand Artwork/Environment/props/rock.png
+  artifactKey: Guid(3604a08945c65491a9ffb90ad9a8ff57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/props/rock.png using Guid(3604a08945c65491a9ffb90ad9a8ff57) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7cf939290c8ba1f6938dc436d11bafe') in 0.0141121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Run/run1.png
+  artifactKey: Guid(5a76fab0851cc8b40a524f67df9820fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Run/run1.png using Guid(5a76fab0851cc8b40a524f67df9820fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '818abcc9f474d7e6be5e8a56876f4d5d') in 0.0149979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.239223 seconds.
+  path: Assets/Sprites/Run/run2.png
+  artifactKey: Guid(5422a6d9cf4d0a64ab55cf90411375f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Run/run2.png using Guid(5422a6d9cf4d0a64ab55cf90411375f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d3731319abd2dafc69ae312a61d3560') in 0.0168097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007460 seconds.
+  path: Assets/SunnyLand Artwork/Environment/props/shrooms.png
+  artifactKey: Guid(f106f73fc33df4c4d9a3e8a5cb54db28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/props/shrooms.png using Guid(f106f73fc33df4c4d9a3e8a5cb54db28) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31b4ddf67b76a20d034eb0216ba0d9de') in 0.0153219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SunnyLand Artwork/Environment/props/skulls.png
+  artifactKey: Guid(a86fabb3151544d25b4310ff397f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/props/skulls.png using Guid(a86fabb3151544d25b4310ff397f732a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17388c59320798f6b7b5c1fe1288a683') in 0.016595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Slimer-Idle/slimer-idle3.png
+  artifactKey: Guid(7693de0fd721ffd4abcccfe4f0d3c98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Slimer-Idle/slimer-idle3.png using Guid(7693de0fd721ffd4abcccfe4f0d3c98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8685f05e0aa02fc587d6362f71792ae9') in 0.0152319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.355191 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Slimer-Idle/slimer-idle5.png
+  artifactKey: Guid(10994ce0c6eebb049ba7eb0d3d7a00ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Slimer-Idle/slimer-idle5.png using Guid(10994ce0c6eebb049ba7eb0d3d7a00ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4761b398e15f643c523db99a557310cb') in 0.0185327 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.356838 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Slimer-Idle/slimer-idle7.png
+  artifactKey: Guid(8bc8b2099a070054ab3e9f26e11cc297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Slimer-Idle/slimer-idle7.png using Guid(8bc8b2099a070054ab3e9f26e11cc297) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74e50e8ad5f5b76d1fceb2f8cd6f882d') in 0.0185444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Slimer/slimer1.png
+  artifactKey: Guid(b7a9b30e19b516f4e8f485ca2d26cbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Slimer/slimer1.png using Guid(b7a9b30e19b516f4e8f485ca2d26cbbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e726d6e0d5bd0900f7b195691248223') in 0.0152556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027930 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Slimer/slimer3.png
+  artifactKey: Guid(ff54077aa8eac95428ff9f1e86f4045f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Slimer/slimer3.png using Guid(ff54077aa8eac95428ff9f1e86f4045f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5792d81c996337fea481d013d86b9506') in 0.0156051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.254856 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Slimer/slimer5.png
+  artifactKey: Guid(6a19c502e81bdac4ca2344c2c4832710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Slimer/slimer5.png using Guid(6a19c502e81bdac4ca2344c2c4832710) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5ae5e2e6255528e404fb163107f39d1') in 0.0145065 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018520 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Slimer/slimer7.png
+  artifactKey: Guid(183f15fefcd558f4ab2841f369951d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Slimer/slimer7.png using Guid(183f15fefcd558f4ab2841f369951d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '243757c8fd97d113b211e67c49676bb3') in 0.017191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SunnyLand Artwork/Environment/props/spike-skull.png
+  artifactKey: Guid(a225befe4953547da8c4133e5d585029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Environment/props/spike-skull.png using Guid(a225befe4953547da8c4133e5d585029) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2602604ab0fe2b8187d8e06168d84bb7') in 0.020762 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.067215 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Vulture-Idle/vulture-idle2.png
+  artifactKey: Guid(e5c3e4adc48c9a14fa06d72378bce3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Vulture-Idle/vulture-idle2.png using Guid(e5c3e4adc48c9a14fa06d72378bce3b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '155c3b6bb06fcd931e50c550895b4164') in 0.0213363 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.886936 seconds.
+  path: Assets/Sprites/Idle/Idle.png
+  artifactKey: Guid(f6c23d5952cba7543b66c72fdb0990f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Idle/Idle.png using Guid(f6c23d5952cba7543b66c72fdb0990f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc46f749e5bc9dbe22297d17bd4b3bdb') in 0.0241852 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/frog/idle/frog-idle-3.png
+  artifactKey: Guid(662ace939438646e7a4067a89ec54b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/frog/idle/frog-idle-3.png using Guid(662ace939438646e7a4067a89ec54b9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e75b8c94fc6fb60a91bf3c07fe312759') in 0.0342336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Dog-idle/dog-idlet5.png
+  artifactKey: Guid(2b3460f9f5437c348b5c65b6675a4617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Dog-idle/dog-idlet5.png using Guid(2b3460f9f5437c348b5c65b6675a4617) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f73d1a1a9998be9cd23ca73ec91fcca1') in 0.0593898 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015090 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Dog-idle/dog-idlet3.png
+  artifactKey: Guid(abb083edade2e8b4687731a96bc20ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Dog-idle/dog-idlet3.png using Guid(abb083edade2e8b4687731a96bc20ece) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b098f847bd37b4bf32d0162c6a6a6dd8') in 0.0327353 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/Enemies/Dino-Idle/dino-idle4.png
+  artifactKey: Guid(25f4ef23863b07943ae75a1fe6be00e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/Enemies/Dino-Idle/dino-idle4.png using Guid(25f4ef23863b07943ae75a1fe6be00e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f66b071d4e37232ab66dd6e7977984bd') in 0.0155483 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.838799 seconds.
+  path: Assets/Sprites/Jump/jump2.png
+  artifactKey: Guid(1329840fd4be2ff4fa6d3af54da44545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Jump/jump2.png using Guid(1329840fd4be2ff4fa6d3af54da44545) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9211d920ac07a0da60015b2ee7decb24') in 0.0183378 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.785767 seconds.
+  path: Assets/Sprites/Crouch/crouch2.png
+  artifactKey: Guid(f0619025c0ac5624582b99f86afe9e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Crouch/crouch2.png using Guid(f0619025c0ac5624582b99f86afe9e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd4e1c9aefa5867b1f97ef566a684094') in 0.0197579 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Prepare
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 13.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6551 unused Assets / (3.2 MB). Loaded Objects now: 7312.
+Memory consumption went from 146.2 MB to 143.0 MB.
+Total: 82.648500 ms (FindLiveObjects: 1.757900 ms CreateObjectMapping: 11.233500 ms MarkObjects: 56.486200 ms  DeleteObjects: 13.167800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 70.302646 seconds.
+  path: Assets/SunnyLand Artwork/Sprites/player/idle/player-idle-1 1.controller
+  artifactKey: Guid(0854e79f278d7f6488ae34c61d5f0359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SunnyLand Artwork/Sprites/player/idle/player-idle-1 1.controller using Guid(0854e79f278d7f6488ae34c61d5f0359) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '32a70caef62c6c685a4004802baa1c2b') in 0.0146102 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Prepare
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 2.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6551 unused Assets / (4.8 MB). Loaded Objects now: 7312.
+Memory consumption went from 146.2 MB to 141.4 MB.
+Total: 15.836300 ms (FindLiveObjects: 0.759500 ms CreateObjectMapping: 3.404200 ms MarkObjects: 7.003900 ms  DeleteObjects: 4.667200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.917 seconds
+Refreshing native plugins compatible for Editor in 1.85 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.922 seconds
+Domain Reload Profiling: 1841ms
+	BeginReloadAssembly (236ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (593ms)
+		LoadAssemblies (420ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (281ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (246ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (922ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (690ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (131ms)
+			ProcessInitializeOnLoadAttributes (467ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6562 unused Assets / (5.1 MB). Loaded Objects now: 7314.
+Memory consumption went from 148.7 MB to 143.6 MB.
+Total: 9.215100 ms (FindLiveObjects: 0.710100 ms CreateObjectMapping: 0.844900 ms MarkObjects: 4.779400 ms  DeleteObjects: 2.879200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.875 seconds
+Refreshing native plugins compatible for Editor in 2.78 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.954 seconds
+Domain Reload Profiling: 1830ms
+	BeginReloadAssembly (218ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (565ms)
+		LoadAssemblies (428ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (242ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (215ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (954ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (724ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (129ms)
+			ProcessInitializeOnLoadAttributes (499ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 2.18 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6562 unused Assets / (4.8 MB). Loaded Objects now: 7316.
+Memory consumption went from 148.7 MB to 143.9 MB.
+Total: 10.256500 ms (FindLiveObjects: 0.767300 ms CreateObjectMapping: 0.682200 ms MarkObjects: 5.512900 ms  DeleteObjects: 3.292500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.897 seconds
+Refreshing native plugins compatible for Editor in 2.13 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.934 seconds
+Domain Reload Profiling: 1832ms
+	BeginReloadAssembly (240ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (17ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (564ms)
+		LoadAssemblies (442ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (236ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (213ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (934ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (710ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (133ms)
+			ProcessInitializeOnLoadAttributes (483ms)
+			ProcessInitializeOnLoadMethodAttributes (78ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 1.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6562 unused Assets / (4.8 MB). Loaded Objects now: 7318.
+Memory consumption went from 148.7 MB to 143.9 MB.
+Total: 9.346700 ms (FindLiveObjects: 0.642200 ms CreateObjectMapping: 1.135000 ms MarkObjects: 4.810600 ms  DeleteObjects: 2.757100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.811 seconds
+Refreshing native plugins compatible for Editor in 2.30 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.954 seconds
+Domain Reload Profiling: 1765ms
+	BeginReloadAssembly (227ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (55ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (503ms)
+		LoadAssemblies (381ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (230ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (206ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (955ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (717ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (140ms)
+			ProcessInitializeOnLoadAttributes (488ms)
+			ProcessInitializeOnLoadMethodAttributes (73ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Refreshing native plugins compatible for Editor in 2.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6562 unused Assets / (4.8 MB). Loaded Objects now: 7320.
+Memory consumption went from 148.7 MB to 143.9 MB.
+Total: 11.901700 ms (FindLiveObjects: 0.629400 ms CreateObjectMapping: 0.897900 ms MarkObjects: 6.522100 ms  DeleteObjects: 3.851100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
