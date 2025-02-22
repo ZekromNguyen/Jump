@@ -12,10 +12,9 @@ public class Movement : MonoBehaviour
     private bool isGrounded;
     private bool isChargingJump;
     private bool isJumping;
-    private bool isBounding;
-    private bool isCrouching; // Biến mới để kiểm tra crouching
     private float jumpForce;
     private int jumpDirection;
+    private bool facingRight = true;
 
     void Start()
     {
@@ -38,7 +37,6 @@ public class Movement : MonoBehaviour
             HandleJump();
         }
 
-        HandleCrouch(); // Xử lý crouch
         UpdateAnimation();
     }
 
@@ -49,6 +47,7 @@ public class Movement : MonoBehaviour
         if (!isChargingJump)
         {
             rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+            FlipCharacter(moveInput);
         }
         else if (moveInput != 0)
         {
@@ -56,10 +55,26 @@ public class Movement : MonoBehaviour
         }
     }
 
+    void FlipCharacter(float moveInput)
+    {
+        if ((moveInput > 0 && !facingRight) || (moveInput < 0 && facingRight))
+        {
+            facingRight = !facingRight;
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
+    }
+
     void HandleJump()
     {
         if (isGrounded && !isJumping)
         {
+            float moveInput = Input.GetAxisRaw("Horizontal");
+            if (moveInput != 0)
+            {
+                jumpDirection = (int)moveInput;
+                FlipCharacter(jumpDirection);
+            }
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 isChargingJump = true;
@@ -77,56 +92,37 @@ public class Movement : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.Space) && isChargingJump)
             {
                 isChargingJump = false;
-                isJumping = true; // ✅ Đánh dấu đang nhảy, không reset ngay lập tức
-                animator.SetBool("isJumping", true); // ✅ Giữ trạng thái Jump
+                isJumping = true;
+                animator.SetBool("isJumping", true);
+
+                FlipCharacter(jumpDirection);
 
                 rb.linearVelocity = new Vector2(jumpDirection * jumpForce, jumpForce);
             }
         }
     }
 
-
-
-    void HandleCrouch()
-    {
-        isCrouching = Input.GetKey(KeyCode.Space); // Kiểm tra giữ Space
-    }
-
     void UpdateAnimation()
     {
-        animator.SetBool("isRunning", Mathf.Abs(rb.linearVelocity.x) > 0.1f && isGrounded && !isJumping);
-        // Chỉ đặt Jump nếu thực sự không grounded
-        if (!isGrounded)
-        {
-            animator.SetBool("isJumping", true);
-        }
-        else
-        {
-            animator.SetBool("isJumping", false);
-        }
-        animator.SetBool("isBounding", isBounding);
-        animator.SetBool("isCrouching", isCrouching); // Cập nhật animation crouching
+        animator.SetBool("isRunning", Mathf.Abs(rb.linearVelocity.x) > 0.1f && isGrounded);
+        animator.SetBool("isJumping", !isGrounded);
+        animator.SetBool("isCrouching", isCrouching());
+    }
+
+    private bool isCrouching()
+    {
+        return isChargingJump;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         foreach (ContactPoint2D contact in collision.contacts)
         {
-            if (contact.normal.y > 0.5f) // Chỉ reset khi tiếp đất
+            if (contact.normal.y > 0.5f)
             {
                 isJumping = false;
-                isBounding = true;
-                animator.SetBool("isJumping", false); // ✅ Chỉ reset khi đã chạm đất
-                Invoke("ResetBounding", 0.1f);
                 return;
             }
         }
-    }
-
-
-
-    private void ResetBounding()
-    {
-        isBounding = false;
     }
 }
