@@ -8,61 +8,79 @@ public class Movement : MonoBehaviour
     public LayerMask groundLayer;
 
     private Rigidbody2D rb;
-    private Animator animator; // Thêm Animator
+    private Animator animator;
     private bool isGrounded;
     private bool isChargingJump;
     private bool isJumping;
     private float jumpForce;
-    private int jumpDirection; // Temporary direction per jump
+    private int jumpDirection;
+    private bool facingRight = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>(); // Lấy Animator từ nhân vật
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         isGrounded = Physics2D.OverlapCircle(transform.position, 0.2f, groundLayer);
 
-        if (isGrounded && !isJumping) // Reset jump state when landing
+        if (isGrounded && !isJumping)
         {
             isJumping = false;
         }
 
-        if (!isJumping) // Can move only when not jumping
+        if (!isJumping)
         {
             HandleMovement();
             HandleJump();
         }
 
-        UpdateAnimation(); // Cập nhật animation mỗi frame
+        UpdateAnimation();
     }
 
     void HandleMovement()
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
 
-        if (!isChargingJump) // Normal movement only if not charging jump
+        if (!isChargingJump)
         {
             rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+            FlipCharacter(moveInput);
         }
-        else if (moveInput != 0) // Store jump direction when pressing left or right
+        else if (moveInput != 0)
         {
             jumpDirection = (int)moveInput;
         }
     }
 
+    void FlipCharacter(float moveInput)
+    {
+        if ((moveInput > 0 && !facingRight) || (moveInput < 0 && facingRight))
+        {
+            facingRight = !facingRight;
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
+    }
+
     void HandleJump()
     {
-        if (isGrounded && !isJumping) // Only allow jump when grounded
+        if (isGrounded && !isJumping)
         {
+            float moveInput = Input.GetAxisRaw("Horizontal");
+            if (moveInput != 0)
+            {
+                jumpDirection = (int)moveInput;
+                FlipCharacter(jumpDirection);
+            }
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 isChargingJump = true;
                 jumpForce = 0f;
-                jumpDirection = 0; // Reset jump direction every charge
-                rb.linearVelocity = Vector2.zero; // Stop movement while charging
+                jumpDirection = 0;
+                rb.linearVelocity = Vector2.zero;
             }
 
             if (isChargingJump)
@@ -74,9 +92,11 @@ public class Movement : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.Space) && isChargingJump)
             {
                 isChargingJump = false;
-                isJumping = true; // Mark character as jumping
+                isJumping = true;
+                animator.SetBool("isJumping", true);
 
-                // Jump straight up if no direction was pressed
+                FlipCharacter(jumpDirection);
+
                 rb.linearVelocity = new Vector2(jumpDirection * jumpForce, jumpForce);
             }
         }
@@ -84,20 +104,23 @@ public class Movement : MonoBehaviour
 
     void UpdateAnimation()
     {
-        // Cập nhật animation chạy
         animator.SetBool("isRunning", Mathf.Abs(rb.linearVelocity.x) > 0.1f && isGrounded);
-
-        // Cập nhật animation nhảy
         animator.SetBool("isJumping", !isGrounded);
+        animator.SetBool("isCrouching", isCrouching());
+    }
+
+    private bool isCrouching()
+    {
+        return isChargingJump;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         foreach (ContactPoint2D contact in collision.contacts)
         {
-            if (contact.normal.y > 0.5f) // If landed on ground
+            if (contact.normal.y > 0.5f)
             {
-                isJumping = false; // Allow new jumps only when fully landed
+                isJumping = false;
                 return;
             }
         }
