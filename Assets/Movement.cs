@@ -2,13 +2,17 @@
 
 public class Movement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float maxJumpForce = 12f;
-    public float chargeRate = 6f;
+    public float moveSpeed = 8f;
+    public float maxJumpForce = 30f;
+    public float chargeRate = 30f;
     public LayerMask groundLayer;
+
+    [SerializeField] private AudioClip runningSound;
+    [SerializeField] private AudioClip jumpingSound;
 
     private Rigidbody2D rb;
     private Animator animator;
+    private AudioSource audioSource;
     private bool isGrounded;
     private bool isChargingJump;
     private bool isJumping;
@@ -20,6 +24,7 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        audioSource = gameObject.AddComponent<AudioSource>(); // Thêm AudioSource vào Player
     }
 
     void Update()
@@ -38,6 +43,7 @@ public class Movement : MonoBehaviour
         }
 
         UpdateAnimation();
+        PlayRunningSound();
     }
 
     void HandleMovement()
@@ -87,19 +93,31 @@ public class Movement : MonoBehaviour
             {
                 jumpForce += chargeRate * Time.deltaTime;
                 jumpForce = Mathf.Clamp(jumpForce, 0, maxJumpForce);
+
+                // Nếu đã đạt lực tối đa, tự động nhảy
+                if (jumpForce >= maxJumpForce)
+                {
+                    Jump();
+                }
             }
 
             if (Input.GetKeyUp(KeyCode.Space) && isChargingJump)
             {
-                isChargingJump = false;
-                isJumping = true;
-                animator.SetBool("isJumping", true);
-
-                FlipCharacter(jumpDirection);
-
-                rb.linearVelocity = new Vector2(jumpDirection * jumpForce, jumpForce);
+                Jump();
             }
         }
+    }
+
+    void Jump()
+    {
+        isChargingJump = false;
+        isJumping = true;
+        animator.SetBool("isJumping", true);
+
+        FlipCharacter(jumpDirection);
+        rb.linearVelocity = new Vector2(jumpDirection * jumpForce, jumpForce);
+
+        PlayJumpSound(); // Phát âm thanh nhảy
     }
 
     void UpdateAnimation()
@@ -123,6 +141,31 @@ public class Movement : MonoBehaviour
                 isJumping = false;
                 return;
             }
+        }
+    }
+
+    private void PlayJumpSound()
+    {
+        if (jumpingSound != null)
+        {
+            audioSource.PlayOneShot(jumpingSound);
+        }
+    }
+
+    private void PlayRunningSound()
+    {
+        if (runningSound != null && rb.linearVelocity.x != 0 && isGrounded)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.clip = runningSound;
+                audioSource.loop = true;
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 }
