@@ -51,3 +51,6 @@ sysinfo.txt
 *.unitypackage
 # Crashlytics generated file
 crashlytics-build.properties
+
+ProjectSettings/EditorBuildSettings.asset
+ UserSettings/Layouts/default-6000.dwlt
