@@ -2,9 +2,9 @@
 
 public class Movement : MonoBehaviour
 {
-    public float moveSpeed = 8f;
-    public float maxJumpForce = 30f;
-    public float chargeRate = 30f;
+    public float moveSpeed = 7f;
+    public float maxJumpForce = 37f;
+    public float chargeRate = 50f;
     public LayerMask groundLayer;
 
     [SerializeField] private AudioClip runningSound;
@@ -95,10 +95,10 @@ public class Movement : MonoBehaviour
                 jumpForce = Mathf.Clamp(jumpForce, 0, maxJumpForce);
 
                 // Nếu đã đạt lực tối đa, tự động nhảy
-                if (jumpForce >= maxJumpForce)
-                {
-                    Jump();
-                }
+                //if (jumpForce >= maxJumpForce)
+                //{
+                //    Jump();
+                //}
             }
 
             if (Input.GetKeyUp(KeyCode.Space) && isChargingJump)
@@ -115,9 +115,12 @@ public class Movement : MonoBehaviour
         animator.SetBool("isJumping", true);
 
         FlipCharacter(jumpDirection);
-        rb.linearVelocity = new Vector2(jumpDirection * jumpForce, jumpForce);
+        float horizontalJumpSpeed = jumpDirection * moveSpeed * 1.4f;
+        float verticalJumpSpeed = jumpForce; 
 
-        PlayJumpSound(); // Phát âm thanh nhảy
+        rb.linearVelocity = new Vector2(horizontalJumpSpeed, verticalJumpSpeed);
+
+        PlayJumpSound(); 
     }
 
     void UpdateAnimation()

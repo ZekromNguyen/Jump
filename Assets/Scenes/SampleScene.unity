@@ -7063,7 +7063,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019362033}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 62f4dceeb795e2e44b95661e97054b73, type: 3}
@@ -12163,7 +12163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2020916722
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12535,7 +12535,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 7
   m_Material: {fileID: 6200000, guid: 68d155b54aebe0947b65f06f77c79750, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -12560,8 +12560,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  maxJumpForce: 30
-  chargeRate: 30
+  maxJumpForce: 37
+  chargeRate: 50
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
