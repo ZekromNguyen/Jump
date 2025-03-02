@@ -2341,8 +2341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  smoothSpeed: 0.1
-  verticalOffset: -2
+  roomHeight: 9
 --- !u!114 &1601761795
 MonoBehaviour:
   m_ObjectHideFlags: 0
