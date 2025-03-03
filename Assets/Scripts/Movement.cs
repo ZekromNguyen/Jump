@@ -10,6 +10,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private AudioClip runningSound;
     [SerializeField] private AudioClip jumpingSound;
 
+    [SerializeField] private Transform groundCheck;
+
     private Rigidbody2D rb;
     private Animator animator;
     private AudioSource audioSource;
@@ -24,19 +26,21 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        audioSource = gameObject.AddComponent<AudioSource>(); // Thêm AudioSource vào Player
+        audioSource = gameObject.AddComponent<AudioSource>(); 
     }
 
     void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(transform.position, 0.2f, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        bool isFalling = rb.linearVelocity.y < -0.1f && !isGrounded;    
 
-        if (isGrounded && !isJumping)
+        // Fix isJumping logic
+        if (isGrounded && rb.linearVelocity.y <= 0.1f)
         {
             isJumping = false;
         }
 
-        if (!isJumping)
+        if (!isJumping && !isFalling && isGrounded)
         {
             HandleMovement();
             HandleJump();
@@ -49,6 +53,11 @@ public class Movement : MonoBehaviour
     void HandleMovement()
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
+
+        if (!isGrounded && isJumping)
+        {
+            return;
+        }
 
         if (!isChargingJump)
         {
@@ -110,16 +119,16 @@ public class Movement : MonoBehaviour
     void Jump()
     {
         isChargingJump = false;
-        isJumping = true;
+        isJumping = true; 
         animator.SetBool("isJumping", true);
 
         FlipCharacter(jumpDirection);
         float horizontalJumpSpeed = jumpDirection * moveSpeed * 1.4f;
-        float verticalJumpSpeed = jumpForce; 
+        float verticalJumpSpeed = jumpForce;
 
         rb.linearVelocity = new Vector2(horizontalJumpSpeed, verticalJumpSpeed);
 
-        PlayJumpSound(); 
+        PlayJumpSound();
     }
 
     void UpdateAnimation()
@@ -127,6 +136,8 @@ public class Movement : MonoBehaviour
         animator.SetBool("isRunning", Mathf.Abs(rb.linearVelocity.x) > 0.1f && isGrounded);
         animator.SetBool("isJumping", !isGrounded);
         animator.SetBool("isCrouching", isCrouching());
+        animator.SetFloat("VelocityY", rb.linearVelocity.y);
+        animator.SetBool("isGrounded", isGrounded);
     }
 
     private bool isCrouching()
