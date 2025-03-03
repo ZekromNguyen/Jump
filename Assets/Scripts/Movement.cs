@@ -94,11 +94,10 @@ public class Movement : MonoBehaviour
                 jumpForce += chargeRate * Time.deltaTime;
                 jumpForce = Mathf.Clamp(jumpForce, 0, maxJumpForce);
 
-                // Nếu đã đạt lực tối đa, tự động nhảy
-                //if (jumpForce >= maxJumpForce)
-                //{
-                //    Jump();
-                //}
+                if (jumpForce >= maxJumpForce)
+                {
+                    Jump();
+                }
             }
 
             if (Input.GetKeyUp(KeyCode.Space) && isChargingJump)
