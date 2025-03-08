@@ -10,8 +10,6 @@ public class Movement : MonoBehaviour
     [SerializeField] private AudioClip runningSound;
     [SerializeField] private AudioClip jumpingSound;
 
-    [SerializeField] private Transform groundCheck;
-
     private Rigidbody2D rb;
     private Animator animator;
     private AudioSource audioSource;
@@ -26,21 +24,19 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        audioSource = gameObject.AddComponent<AudioSource>(); 
+        audioSource = gameObject.AddComponent<AudioSource>(); // Thêm AudioSource vào Player
     }
 
     void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        bool isFalling = rb.linearVelocity.y < -0.1f && !isGrounded;    
+        isGrounded = Physics2D.OverlapCircle(transform.position, 0.2f, groundLayer);
 
-        // Fix isJumping logic
-        if (isGrounded && rb.linearVelocity.y <= 0.1f)
+        if (isGrounded && !isJumping)
         {
             isJumping = false;
         }
 
-        if (!isJumping && !isFalling && isGrounded)
+        if (!isJumping)
         {
             HandleMovement();
             HandleJump();
@@ -53,11 +49,6 @@ public class Movement : MonoBehaviour
     void HandleMovement()
     {
         float moveInput = Input.GetAxisRaw("Horizontal");
-
-        if (!isGrounded && isJumping)
-        {
-            return;
-        }
 
         if (!isChargingJump)
         {
@@ -119,7 +110,7 @@ public class Movement : MonoBehaviour
     void Jump()
     {
         isChargingJump = false;
-        isJumping = true; 
+        isJumping = true;
         animator.SetBool("isJumping", true);
 
         FlipCharacter(jumpDirection);
@@ -136,8 +127,6 @@ public class Movement : MonoBehaviour
         animator.SetBool("isRunning", Mathf.Abs(rb.linearVelocity.x) > 0.1f && isGrounded);
         animator.SetBool("isJumping", !isGrounded);
         animator.SetBool("isCrouching", isCrouching());
-        animator.SetFloat("VelocityY", rb.linearVelocity.y);
-        animator.SetBool("isGrounded", isGrounded);
     }
 
     private bool isCrouching()

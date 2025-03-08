@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -138,5 +138,15 @@ public class Player : MonoBehaviour
 
         pogoJoint.motor = motor;
         pogoJoint.limits = limits;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("OnCollisionEnter2D: Va chạm với " + collision.gameObject.name);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("OnTriggerEnter2D: Đi qua " + other.gameObject.name);
     }
 }
