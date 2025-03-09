@@ -115,11 +115,11 @@ public class Movement : MonoBehaviour
 
         FlipCharacter(jumpDirection);
         float horizontalJumpSpeed = jumpDirection * moveSpeed * 1.4f;
-        float verticalJumpSpeed = jumpForce; 
+        float verticalJumpSpeed = jumpForce;
 
         rb.linearVelocity = new Vector2(horizontalJumpSpeed, verticalJumpSpeed);
 
-        PlayJumpSound(); 
+        PlayJumpSound();
     }
 
     void UpdateAnimation()

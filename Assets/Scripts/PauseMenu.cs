@@ -3,7 +3,9 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
-    private bool isPaused = false; // Properly initialize
+    private bool isPaused = false; 
+    public GameObject optionPopup; 
+
 
     void Start()
     {
@@ -31,6 +33,7 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Pausing Game...");
         pauseMenu.SetActive(true);
+        optionPopup.SetActive(false);
         isPaused = true;
         Time.timeScale = 0f;
     }
@@ -39,13 +42,20 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Resuming Game...");
         pauseMenu.SetActive(false);
+        optionPopup.SetActive(false);
         isPaused = false;
         Time.timeScale = 1f;
     }
 
-    public void OptionToggle()
+    public void ShowOptionPopup()
     {
+        optionPopup.SetActive(true);
+        pauseMenu.SetActive(false);
+    }
 
+    public void HideOptionPopup()
+    {
+        optionPopup.SetActive(false); 
     }
 
     public void QuitGame()
