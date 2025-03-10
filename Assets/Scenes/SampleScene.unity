@@ -653,8 +653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 58}
-  m_SizeDelta: {x: 303.1552, y: 54.9408}
+  m_AnchoredPosition: {x: 0.000016212, y: 22}
+  m_SizeDelta: {x: 259.1487, y: 85.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &218307155
 MonoBehaviour:
@@ -8298,7 +8298,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -758, y: 441.93}
+  m_AnchoredPosition: {x: -893, y: 489}
   m_SizeDelta: {x: 208.715, y: 64.727}
   m_Pivot: {x: 0.21018375, y: 0.5}
 --- !u!114 &880411039
@@ -12077,8 +12077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 230}
-  m_SizeDelta: {x: 375.0342, y: 158.409}
+  m_AnchoredPosition: {x: -12.358192, y: 294.6785}
+  m_SizeDelta: {x: 537.1013, y: 220.7084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1460069987
 MonoBehaviour:
@@ -12100,10 +12100,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Win!!!
+  m_text: "You did it, Hero! The Golden Trophy shines brightly in your grasp \u2014
+    proof that legends are real. "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 89f31a72ea15e254bb785f348fa751c4, type: 2}
+  m_sharedMaterial: {fileID: 6567720270869859193, guid: 89f31a72ea15e254bb785f348fa751c4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -12165,7 +12166,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -681.43256, y: 0, z: -692.17786, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -15975,7 +15976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -22.299805, y: -99.30005}
+  m_AnchoredPosition: {x: -22.300049, y: -99.30014}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2020916723
@@ -16182,7 +16183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 2020916721}
-  optionPopup: {fileID: 2020916721}
+  optionPopup: {fileID: 1767042300}
 --- !u!4 &2053157397
 Transform:
   m_ObjectHideFlags: 0
@@ -16504,7 +16505,7 @@ Transform:
   m_GameObject: {fileID: 2099526696}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.3, y: 56.26, z: 0}
+  m_LocalPosition: {x: 5.1, y: -1.6, z: 0}
   m_LocalScale: {x: 1.2273004, y: 1.1938636, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
