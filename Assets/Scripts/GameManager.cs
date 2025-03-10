@@ -7,23 +7,22 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject GameWinUi;
     private bool isGameWin = false;
 
-    private float startTime;
-    private float finishTime;
+ 
 
     void Start()
     {
         GameWinUi.SetActive(false); // Tắt UI Win Game lúc khởi động
-        startTime = Time.time;      // Bắt đầu tính thời gian
+              // Bắt đầu tính thời gian
     }
 
     // Khi người chơi thắng
     public void GameWin()
     {
         isGameWin = true;
-        finishTime = Time.time - startTime; // Lấy thời gian hoàn thành
+      
 
         // Gửi dữ liệu lên leaderboard
-        LeaderboardCreator.Instance.SubmitScore("Player1", finishTime);
+       // LeaderboardCreator.Instance.SubmitScore("Player1", finishTime);
 
 
 
