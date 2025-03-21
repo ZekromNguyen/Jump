@@ -1,29 +1,23 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AudioManager : MonoBehaviour
+public class VolumeController : MonoBehaviour
 {
-    public Slider volumeSlider;
-
-    public void SetVolume(float volume)
-    {
-        AudioListener.volume = volume; // Adjust master volume
-
-        // Save the volume setting
-        PlayerPrefs.SetFloat("MasterVolume", volume);
-        PlayerPrefs.Save();
-    }
+    public Slider volumeSlider; // Assign in Inspector
 
     private void Start()
     {
-        // Load saved volume (default to 1 if not set)
-        float savedVolume = PlayerPrefs.GetFloat("MasterVolume", 1f);
-        AudioListener.volume = savedVolume;
+        // Load saved volume or set default to 1
+        volumeSlider.value = PlayerPrefs.GetFloat("Volume", 1f);
+        AudioListener.volume = volumeSlider.value;
 
-        // Update slider UI if assigned
-        if (volumeSlider != null)
-        {
-            volumeSlider.value = savedVolume;
-        }
+        // Add listener to detect changes
+        volumeSlider.onValueChanged.AddListener(ChangeVolume);
+    }
+
+    private void ChangeVolume(float value)
+    {
+        AudioListener.volume = value; // Change game volume
+        PlayerPrefs.SetFloat("Volume", value); // Save volume
     }
 }
