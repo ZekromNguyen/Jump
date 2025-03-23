@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3e63d10b9bd0a44c2810d3a3bc19cecc
+guid: 848f04f060025c94aa92ae9826e9022b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8010657799410552898
-    second: background3_0
+      213: 7493704501602603530
+    second: imgbin_game-buttons-png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: background3_0
+      name: imgbin_game-buttons-png_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 636
-        height: 330
+        x: 50
+        y: 55
+        width: 350
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebfebe87c2d64d090800000000000000
-      internalID: -8010657799410552898
+      spriteID: a02d4c57a8cfef760800000000000000
+      internalID: 7493704501602603530
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      background3_0: -8010657799410552898
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
